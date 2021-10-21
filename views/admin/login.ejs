@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jQuery-3.6.0.js"></script>
+    <style>
+        body {
+            background: url(images/bg.jpg) no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6 col-md-offset-5">
+            <h2>登录页面</h2>
+        </div>
+        <form action="/api/dologin" method="post">
+            <div class="row myrow">
+                <div class="col-md-3 col-md-offset-5">
+                    <div class="form-group">
+                        <label for="uname">用户名：</label>
+                        <input type="text" class="form-control" name="username" id="uname" placeholder="用户名" required autocomplete="none">
+                    </div>
+                </div>
+            </div>
+            <div class="row myrow">
+                <div class="col-md-3 col-md-offset-5">
+                    <div class="form-group">
+                        <label for="pwd">密码：</label>
+                        <input type="password" class="form-control" name="pwd" id="pwd" placeholder="密码" required autocomplete="none">
+                    </div>
+                </div>
+            </div>
+            <div class="row myrow">
+                <div class="col-md-3 col-md-offset-5">
+                    <button class="btn btn-primary btn-block">登录</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/bootstrap.js "></script>
+</body>
+
+</html>

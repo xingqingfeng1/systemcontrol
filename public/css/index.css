@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    height: 80px;
+    line-height: 80px;
+    box-shadow: inset 0px 0px 10px #cecece;
+}
+
+.top h2 {
+    float: left;
+}
+
+.topright {
+    float: right;
+}
+
+.backlogin {
+    background-color: #cecece;
+    color: #fff;
+}
+
+main {
+    overflow: hidden;
+}
+
+.mainnav {
+    width: 25%;
+    height: 480px;
+    float: left;
+    border-right: 1px solid #7373e0;
+}
+
+.maincon {
+    height: 480px;
+    width: 75%;
+    float: right;
+    position: relative;
+}
+
+.conbox {
+    margin-left: 20px;
+    position: relative;
+}

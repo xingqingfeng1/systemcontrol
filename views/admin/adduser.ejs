@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jQuery-3.6.0.js"></script>
+</head>
+
+<body>
+    <%- include("commen/top.ejs")%>
+        <main>
+            <%- include("commen/mainnav.ejs")%>
+                <div class="maincon">
+                    <ol class="breadcrumb">
+                        <li><a href="/api/index">用户管理</a></li>
+                        <li class="active">添加</li>
+                    </ol>
+                    <div class="conbox">
+                        <form action="/api/doadduser" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                用户名：
+                                <input type="text" name="username" id="" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                姓名：
+                                <input type="text" name="personname" id="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                年龄：
+                                <input type="text" name="age" id="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                性别:
+                                <input type="text" name="sex" id="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                密码:
+                                <input type="password" name="pwd" id="" required class="form-control"> 头像:
+                                <input type="file" name="pic">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="添加" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </main>
+        <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
